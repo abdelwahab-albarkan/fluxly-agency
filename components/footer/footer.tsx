@@ -76,7 +76,7 @@ function NewsletterForm() {
           required
           disabled={subscribed}
           aria-label="Email address for newsletter"
-          placeholder="you@company.com"
+          placeholder="you@example.com"
           className="w-full rounded-full border border-white/10 bg-white/[0.04] px-5 py-3.5 text-sm text-white placeholder-ink-muted backdrop-blur-md transition-colors duration-300 focus:border-brand/50 focus:outline-none focus:ring-2 focus:ring-brand/20 disabled:opacity-60"
         />
       </div>

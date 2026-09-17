@@ -81,7 +81,7 @@ export function ContactForm() {
                 name="email"
                 type="email"
                 required
-                placeholder="jane@company.com"
+                placeholder="you@example.com"
                 className={inputClasses}
               />
             </div>

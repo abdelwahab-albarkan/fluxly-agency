@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar } from '@/components/navbar/navbar';
 import { Footer } from '@/components/footer/footer';
 import { CursorFollower } from '@/components/ui/cursor-follower';
+import { WhatsAppButton } from '@/components/ui/whatsapp-button';
 
 export default function MarketingLayout({
   children,
@@ -22,6 +23,7 @@ export default function MarketingLayout({
         {children}
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

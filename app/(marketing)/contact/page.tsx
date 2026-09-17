@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {
   Mail,
   Phone,
+  MessageCircle,
   MapPin,
   Clock,
   Globe2,
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 const contactInfo = [
   { icon: Mail, label: "Email", value: "hello@fluxlyagency.com", href: "mailto:hello@fluxlyagency.com" },
   { icon: Phone, label: "Phone", value: "+212 625 218 443", href: "tel:+212625218443" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+212 625 218 443", href: "https://wa.me/212625218443" },
   { icon: MapPin, label: "Office", value: "New York, NY, United States", href: undefined },
   { icon: Clock, label: "Working Hours", value: "Monday – Friday, 9:00 AM – 6:00 PM ET", href: undefined },
   { icon: Globe2, label: "Availability", value: "Remote — serving clients across the US", href: undefined },

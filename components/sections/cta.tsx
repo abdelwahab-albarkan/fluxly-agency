@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, Sparkles } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/animations/reveal";
@@ -61,6 +62,16 @@ export function Cta({
                   <Button href={secondaryHref} variant="secondary" size="lg">
                     {secondaryLabel}
                   </Button>
+                  <a
+                    href="https://wa.me/212625218443?text=Hi%20Fluxly%2C%20I%27d%20like%20a%20free%20quote%20for%20my%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Chat with us on WhatsApp"
+                    className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-[#0a1f14] shadow-[0_8px_24px_-6px_rgba(37,211,102,0.55)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#20bd5a]"
+                  >
+                    <FaWhatsapp className="h-5 w-5" />
+                    WhatsApp
+                  </a>
                 </div>
               </div>
 

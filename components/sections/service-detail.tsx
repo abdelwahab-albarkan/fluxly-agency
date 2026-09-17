@@ -18,7 +18,7 @@ export function ServiceDetail({ service }: { service: Service }) {
     description: service.shortDescription,
     serviceType: service.name,
     areaServed: { "@type": "Country", name: "United States" },
-    provider: { "@type": "Organization", name: "Fluxly Agency", url: "https://fluxlyagency.com" },
+    provider: { "@type": "Organization", name: "Fluxly Agency", url: "https://agencyfluxly.com" },
   };
   const faqSchema =
     service.faq && service.faq.length > 0

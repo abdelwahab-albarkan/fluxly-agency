@@ -15,7 +15,7 @@ const GeistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://fluxlyagency.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://agencyfluxly.com"),
   title: "Web Design & Development Agency | Fluxly Agency",
   description:
     "Fluxly is a US web design and development agency building custom websites, e-commerce stores, SaaS platforms, UI/UX, branding, and SEO that drive growth. Book a free consultation.",
@@ -53,11 +53,11 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": ["Organization", "ProfessionalService"],
   name: "Fluxly Agency",
-  url: "https://fluxlyagency.com",
+  url: "https://agencyfluxly.com",
   email: "abdelwahabalbarkan2018@gmail.com",
   telephone: "+212625218443",
-  logo: "https://fluxlyagency.com/logos/fluxly-logo.png",
-  image: "https://fluxlyagency.com/logos/fluxly-logo.png",
+  logo: "https://agencyfluxly.com/logos/fluxly-logo.png",
+  image: "https://agencyfluxly.com/logos/fluxly-logo.png",
   priceRange: "$$",
   description:
     "Fluxly Agency is a US web design and development agency specializing in custom websites, e-commerce, SaaS, UI/UX design, branding, and SEO.",

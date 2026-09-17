@@ -5,7 +5,7 @@ import { caseStudies } from '@/lib/constants/case-studies';
 import { locations } from '@/lib/constants/locations';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://fluxlyagency.com';
+  const baseUrl = 'https://agencyfluxly.com';
 
   const routes = [
     '',

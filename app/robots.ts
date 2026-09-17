@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/dashboard/', '/api/'],
     },
-    sitemap: 'https://fluxlyagency.com/sitemap.xml',
+    sitemap: 'https://agencyfluxly.com/sitemap.xml',
   };
 }

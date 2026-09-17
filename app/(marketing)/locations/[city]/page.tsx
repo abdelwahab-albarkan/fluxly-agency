@@ -51,7 +51,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: `Fluxly Agency — Web Design & Development in ${loc.city}`,
-    url: `https://fluxlyagency.com/locations/${loc.slug}`,
+    url: `https://agencyfluxly.com/locations/${loc.slug}`,
     telephone: "+212625218443",
     email: "abdelwahabalbarkan2018@gmail.com",
     priceRange: "$$",

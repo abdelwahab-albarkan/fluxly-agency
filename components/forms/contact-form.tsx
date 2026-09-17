@@ -25,10 +25,31 @@ const budgets = ["Under $5,000", "$5,000 – $15,000", "$15,000 – $40,000", "$
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setError(null);
+    setSubmitting(true);
+    const fd = new FormData(e.currentTarget);
+    const payload = Object.fromEntries(fd.entries());
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || !json.ok) {
+        throw new Error(json.error || "Something went wrong. Please try again.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -149,8 +170,13 @@ export function ContactForm() {
             />
           </div>
 
-          <Button type="submit" size="lg" className="mt-8 w-full sm:w-auto">
-            Send Message
+          {error && (
+            <p className="mt-5 text-sm text-red-400" role="alert">
+              {error}
+            </p>
+          )}
+          <Button type="submit" size="lg" disabled={submitting} className="mt-8 w-full sm:w-auto">
+            {submitting ? "Sending…" : "Send Message"}
             <ArrowRight className="h-4 w-4" strokeWidth={2} />
           </Button>
         </div>

@@ -29,11 +29,41 @@ export function BookingForm() {
   const [selectedDate, setSelectedDate] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
   const [confirmed, setConfirmed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (selectedDate === null || !selectedTime) return;
-    setConfirmed(true);
+    setError(null);
+    setSubmitting(true);
+    const fd = new FormData(e.currentTarget);
+    const dateLabel = dates[selectedDate].toLocaleDateString(undefined, {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+    });
+    try {
+      const res = await fetch("/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: fd.get("name"),
+          email: fd.get("email"),
+          date: dateLabel,
+          time: selectedTime,
+        }),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok || !json.ok) {
+        throw new Error(json.error || "Something went wrong. Please try again.");
+      }
+      setConfirmed(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (confirmed && selectedDate !== null && selectedTime) {
@@ -132,13 +162,18 @@ export function BookingForm() {
         </div>
       </div>
 
+      {error && (
+        <p className="mt-4 text-sm text-red-400" role="alert">
+          {error}
+        </p>
+      )}
       <Button
         type="submit"
         size="lg"
-        disabled={selectedDate === null || !selectedTime}
+        disabled={selectedDate === null || !selectedTime || submitting}
         className="mt-6 w-full sm:w-auto"
       >
-        Confirm Booking
+        {submitting ? "Confirming…" : "Confirm Booking"}
         <ArrowRight className="h-4 w-4" strokeWidth={2} />
       </Button>
     </motion.form>

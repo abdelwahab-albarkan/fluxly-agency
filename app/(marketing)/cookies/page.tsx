@@ -40,7 +40,7 @@ const sections = [
   },
   {
     title: "7. Contact Us",
-    content: "Questions about our use of cookies can be sent to hello@fluxlyagency.com or through our contact page.",
+    content: "Questions about our use of cookies can be sent to abdelwahabalbarkan2018@gmail.com or through our contact page.",
   },
 ];
 

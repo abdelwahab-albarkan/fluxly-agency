@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@fluxlyagency.com", href: "mailto:hello@fluxlyagency.com" },
+  { icon: Mail, label: "Email", value: "abdelwahabalbarkan2018@gmail.com", href: "mailto:abdelwahabalbarkan2018@gmail.com" },
   { icon: Phone, label: "Phone", value: "+212 625 218 443", href: "tel:+212625218443" },
   { icon: MessageCircle, label: "WhatsApp", value: "+212 625 218 443", href: "https://wa.me/212625218443" },
   { icon: MapPin, label: "Office", value: "New York, NY, United States", href: undefined },

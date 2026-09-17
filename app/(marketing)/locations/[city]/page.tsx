@@ -53,7 +53,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     name: `Fluxly Agency — Web Design & Development in ${loc.city}`,
     url: `https://fluxlyagency.com/locations/${loc.slug}`,
     telephone: "+212625218443",
-    email: "hello@fluxlyagency.com",
+    email: "abdelwahabalbarkan2018@gmail.com",
     priceRange: "$$",
     areaServed: { "@type": "City", name: `${loc.city}, ${loc.stateAbbr}` },
     address: {

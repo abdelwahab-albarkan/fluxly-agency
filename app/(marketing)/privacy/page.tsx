@@ -55,7 +55,7 @@ const sections = [
   },
   {
     title: "10. Contact Us",
-    content: "Questions about this policy can be sent to hello@fluxlyagency.com or through our contact page.",
+    content: "Questions about this policy can be sent to abdelwahabalbarkan2018@gmail.com or through our contact page.",
   },
 ];
 

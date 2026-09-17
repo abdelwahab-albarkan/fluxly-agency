@@ -54,7 +54,7 @@ const jsonLd = {
   "@type": ["Organization", "ProfessionalService"],
   name: "Fluxly Agency",
   url: "https://fluxlyagency.com",
-  email: "hello@fluxlyagency.com",
+  email: "abdelwahabalbarkan2018@gmail.com",
   telephone: "+212625218443",
   logo: "https://fluxlyagency.com/logos/fluxly-logo.png",
   image: "https://fluxlyagency.com/logos/fluxly-logo.png",
@@ -71,7 +71,7 @@ const jsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+212625218443",
-    email: "hello@fluxlyagency.com",
+    email: "abdelwahabalbarkan2018@gmail.com",
     contactType: "sales",
     areaServed: "US",
     availableLanguage: ["English"],

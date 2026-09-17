@@ -189,11 +189,11 @@ export function Footer() {
           <ul className="space-y-4">
             <li>
               <a
-                href="mailto:hello@fluxlyagency.com"
+                href="mailto:abdelwahabalbarkan2018@gmail.com"
                 className="group flex items-start gap-2.5 text-sm text-ink-muted transition-colors duration-300 hover:text-white"
               >
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-brand" strokeWidth={2} />
-                hello@fluxlyagency.com
+                abdelwahabalbarkan2018@gmail.com
               </a>
             </li>
             <li>

@@ -8,9 +8,10 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { RevealGroup, RevealItem } from "@/components/animations/reveal";
 
 export const metadata: Metadata = {
-  title: "Services — Fluxly Agency",
+  title: "Web Design & Development Services — Fluxly Agency",
   description:
-    "Custom website development, e-commerce, SaaS, web applications, UI/UX design, SEO, branding, automation, and maintenance for growing businesses.",
+    "Full-service web agency: custom website development, e-commerce, SaaS, web applications, UI/UX design, SEO, and branding for growing US businesses.",
+  alternates: { canonical: "/services" },
 };
 
 const whyChooseUs = [

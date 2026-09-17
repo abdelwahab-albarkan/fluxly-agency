@@ -11,6 +11,7 @@ const companyLinks = [
   { label: "About", href: "/about" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Locations", href: "/locations" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -197,23 +198,23 @@ export function Footer() {
             </li>
             <li>
               <a
-                href="tel:+212XXXXXXXXX"
+                href="tel:+212625218443"
                 className="group flex items-start gap-2.5 text-sm text-ink-muted transition-colors duration-300 hover:text-white"
               >
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand" strokeWidth={2} />
-                +212 XXX XXX XXX
+                +212 625 218 443
               </a>
             </li>
             <li className="flex items-start gap-2.5 text-sm text-ink-muted">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand" strokeWidth={2} />
-              Morocco
+              New York, NY, United States
             </li>
             <li className="flex items-start gap-2.5 text-sm text-ink-muted">
               <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand" strokeWidth={2} />
               <span>
                 Monday – Friday
                 <br />
-                09:00 – 18:00
+                9:00 AM – 6:00 PM ET
               </span>
             </li>
           </ul>

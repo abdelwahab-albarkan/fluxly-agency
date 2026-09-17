@@ -17,16 +17,18 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/animations/reveal"
 import { ContactForm } from "@/components/forms/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact — Fluxly Agency",
-  description: "Get in touch to talk about your project. We reply within two hours.",
+  title: "Contact Our Web Agency | Free Consultation — Fluxly Agency",
+  description:
+    "Contact Fluxly Agency for a free consultation on web design, development, e-commerce, or SEO. We reply within two hours. Get a quote today.",
+  alternates: { canonical: "/contact" },
 };
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "hello@fluxlyagency.com", href: "mailto:hello@fluxlyagency.com" },
-  { icon: Phone, label: "Phone", value: "+44 20 7946 3851", href: "tel:+442079463851" },
-  { icon: MapPin, label: "Office", value: "Canary Wharf, London E14, United Kingdom", href: undefined },
-  { icon: Clock, label: "Working Hours", value: "Monday – Friday, 09:00 – 18:00 GMT", href: undefined },
-  { icon: Globe2, label: "Availability", value: "Remote Worldwide", href: undefined },
+  { icon: Phone, label: "Phone", value: "+212 625 218 443", href: "tel:+212625218443" },
+  { icon: MapPin, label: "Office", value: "New York, NY, United States", href: undefined },
+  { icon: Clock, label: "Working Hours", value: "Monday – Friday, 9:00 AM – 6:00 PM ET", href: undefined },
+  { icon: Globe2, label: "Availability", value: "Remote — serving clients across the US", href: undefined },
 ];
 
 const whyWorkWithUs = [

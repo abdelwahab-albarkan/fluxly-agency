@@ -30,8 +30,10 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/animations/reveal"
 import { services } from "@/lib/constants/services";
 
 export const metadata: Metadata = {
-  title: "About — Fluxly Agency",
-  description: "Our story, mission, values, and the expertise behind a premium digital agency.",
+  title: "About Our Web Design & Development Agency — Fluxly Agency",
+  description:
+    "Meet Fluxly — a US web design and development agency. Our story, values, and the team behind custom websites, e-commerce, and digital products.",
+  alternates: { canonical: "/about" },
 };
 
 const values = [

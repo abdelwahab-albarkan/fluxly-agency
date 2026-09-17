@@ -10,8 +10,10 @@ import { cn } from "@/lib/utils/cn";
 import { comparisonRows } from "@/lib/constants/pricing";
 
 export const metadata: Metadata = {
-  title: "Pricing — Fluxly Agency",
-  description: "Flexible, custom pricing for websites, e-commerce, SaaS, and web applications. No fixed products.",
+  title: "Web Design & Development Pricing — Fluxly Agency",
+  description:
+    "Flexible, custom pricing for web design, development, e-commerce, SaaS, and SEO. Transparent quotes tailored to your project. Get a free estimate.",
+  alternates: { canonical: "/pricing" },
 };
 
 const pricingProcessSteps = [

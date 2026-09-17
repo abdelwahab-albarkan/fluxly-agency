@@ -5,8 +5,10 @@ import { getServiceBySlug } from "@/lib/constants/services";
 const service = getServiceBySlug("maintenance")!;
 
 export const metadata: Metadata = {
-  title: `${service.name} — Fluxly Agency`,
-  description: service.shortDescription,
+  title: "Website Maintenance & Support Services — Fluxly Agency",
+  description:
+    "Website maintenance and support — updates, security, backups, and monitoring to keep your site fast and secure. Ongoing care from a US agency. Get a plan.",
+  alternates: { canonical: "/services/maintenance" },
 };
 
 export default function Page() {

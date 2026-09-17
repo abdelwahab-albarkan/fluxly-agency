@@ -11,8 +11,40 @@ import { Cta } from "@/components/sections/cta";
 import type { Service } from "@/lib/constants/services";
 
 export function ServiceDetail({ service }: { service: Service }) {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.name,
+    description: service.shortDescription,
+    serviceType: service.name,
+    areaServed: { "@type": "Country", name: "United States" },
+    provider: { "@type": "Organization", name: "Fluxly Agency", url: "https://fluxlyagency.com" },
+  };
+  const faqSchema =
+    service.faq && service.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: service.faq.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }
+      : null;
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <PageHero
         eyebrow="Service"
         icon={<service.icon className="h-3.5 w-3.5" strokeWidth={2} />}

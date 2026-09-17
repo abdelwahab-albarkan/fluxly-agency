@@ -46,8 +46,8 @@ export function Hero() {
             </div>
 
             <p className="max-w-xl text-base font-normal leading-relaxed text-ink-muted sm:text-lg">
-              We&apos;re a digital agency crafting innovative solutions that help brands stand out and grow in the
-              digital world.
+              Fluxly is a <strong className="font-semibold text-ink-secondary">web design and development agency</strong>{" "}
+              crafting custom websites, e-commerce stores, and digital experiences that help brands stand out and grow.
             </p>
 
             {/* CTAs */}

@@ -7,8 +7,10 @@ import { RevealGroup, RevealItem } from "@/components/animations/reveal";
 import { industries } from "@/lib/constants/industries";
 
 export const metadata: Metadata = {
-  title: "Industries — Fluxly Agency",
-  description: "Premium digital products for restaurants, healthcare, real estate, law, education, and more.",
+  title: "Industries We Serve | Web Design by Industry — Fluxly Agency",
+  description:
+    "Web design and development for restaurants, healthcare, real estate, law, education, and more — custom digital products tailored to your industry.",
+  alternates: { canonical: "/industries" },
 };
 
 export default function IndustriesPage() {

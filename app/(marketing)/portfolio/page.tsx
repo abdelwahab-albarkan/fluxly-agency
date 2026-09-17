@@ -7,8 +7,10 @@ import { Counter } from "@/components/animations/counter";
 import { PortfolioGrid } from "@/components/portfolio/portfolio-grid";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Fluxly Agency",
-  description: "A showcase of premium websites, e-commerce stores, SaaS platforms, and digital experiences we've designed and built.",
+  title: "Web Design Portfolio | Our Work — Fluxly Agency",
+  description:
+    "Our web design portfolio — custom websites, e-commerce stores, and SaaS platforms we've designed and built, with real client results.",
+  alternates: { canonical: "/portfolio" },
 };
 
 const resultStats = [

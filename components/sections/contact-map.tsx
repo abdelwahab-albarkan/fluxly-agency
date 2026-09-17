@@ -59,14 +59,14 @@ export function ContactMap() {
               {/* Location info card */}
               <div className="absolute left-5 top-5 max-w-[280px] rounded-xl border border-white/10 bg-canvas/80 p-5 backdrop-blur-xl md:left-8 md:top-8">
                 <p className="text-xs font-semibold uppercase tracking-widest text-brand">Our Office</p>
-                <p className="mt-2 text-base font-semibold text-white">Agency Studio</p>
+                <p className="mt-2 text-base font-semibold text-white">Fluxly Agency</p>
                 <p className="mt-1 text-sm leading-relaxed text-ink-muted">
-                  Canary Wharf, London E14
+                  New York, NY
                   <br />
-                  United Kingdom
+                  United States
                 </p>
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Canary+Wharf+London"
+                  href="https://www.google.com/maps/search/?api=1&query=New+York+NY"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand transition-colors hover:text-brand-hover"
